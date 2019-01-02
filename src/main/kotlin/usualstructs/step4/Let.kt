@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
 private fun nullableFactorial(input: Int?) = input?.let { fact(it) }
 
 private fun fact(i: Int): Long {
-    if (i < 1) return 1
-    return i * fact(i - 1)
+    return if (i < 1)  1
+    else i * fact(i - 1)
 }
