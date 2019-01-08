@@ -23,6 +23,9 @@
           <option name="pluginClasspaths">
             <array />
           </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
           <option name="suppressWarnings" value="true" />
         </compilerArguments>
       </configuration>

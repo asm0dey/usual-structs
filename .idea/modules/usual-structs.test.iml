@@ -15,7 +15,6 @@
           <option name="friendPaths">
             <array>
               <option value="$MODULE_DIR$/../../build/classes/kotlin/main" />
-              <option value="$MODULE_DIR$/../../target/generated/src/main/kotlin" />
             </array>
           </option>
           <option name="languageVersion" value="1.3" />
@@ -25,6 +24,9 @@
           </option>
           <option name="pluginClasspaths">
             <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
           </option>
         </compilerArguments>
       </configuration>
