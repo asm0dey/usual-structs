@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/usual-structs.iml" filepath="$PROJECT_DIR$/usual-structs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usual-structs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/usual-structs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usual-structs.test.iml" filepath="$PROJECT_DIR$/.idea/modules/usual-structs.test.iml" />
     </modules>
   </component>
 </project>

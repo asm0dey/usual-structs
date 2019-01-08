@@ -7,3 +7,4 @@ fun simplified() {
         println(string)
     }
 }
+

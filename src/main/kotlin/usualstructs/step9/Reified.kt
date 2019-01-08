@@ -11,18 +11,3 @@ data class TreeNode<T : Any>(
     var right: TreeNode<*>? = null
 )
 
-inline fun <reified T : Any> TreeNode<*>.findChildWithClass(): TreeNode<T>? {
-    val toInspect = LinkedList<TreeNode<*>>()
-    toInspect.add(this)
-    while (!toInspect.isEmpty()) {
-        val currentRoot = toInspect.pollFirst()
-        if (currentRoot.value::class == T::class) return currentRoot as TreeNode<T>
-        else sequenceOf(currentRoot.left, currentRoot.right).filterNotNullTo(toInspect)
-    }
-    return null
-}
-
-fun main(args: Array<String>) {
-    println(z.findChildWithClass<String>())
-    println(z.findChildWithClass<Int>())
-}

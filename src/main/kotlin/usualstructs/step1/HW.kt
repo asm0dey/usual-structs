@@ -1,6 +1,6 @@
 package usualstructs.step1
 
 fun main(args: Array<String>) {
-    var friend = "World"
+    val friend = "World"
     println("Hello, $friend")
 }
