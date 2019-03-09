@@ -1,9 +1,13 @@
 package usualstructs.step6
 
 fun main(args: Array<String>) {
-    inThread { println("Hi!") }
+    threadedPrint { "Hi!" }
+    threadedPrint { 3 }
 }
 
-inline fun inThread(crossinline function: () -> Unit) {
-    Thread { function() }.start()
+inline fun <T> threadedPrint(crossinline function: () -> T) {
+    Thread {
+        println(function())
+        println("done")
+    }.start()
 }
